@@ -1,0 +1,628 @@
+body{
+    color: rgb(75, 40, 40);
+}
+
+.fundo{
+    background-color: #000;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    top: 0;
+    border-radius: 8px;
+}
+
+.fundoo{
+    background-color: #000;
+    opacity: 0.2;
+    position: absolute;
+    width: 68,9%;
+    z-index: 10;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: relative;
+}
+
+.divisor{
+    width: 1px;
+    height: 10px;
+    background: #dddddd;
+    margin: 15px 0px;
+    padding: 0px;
+}
+
+.navbar{
+    min-height: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+}
+
+.navbar-collapse{
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.nav>li>a{
+    padding: 10px 5px 10px 10px;
+}
+
+.dropdown-menu{
+    background: rgb(250, 250, 250);
+    color: #666;
+    height: 100%;
+    width: 50px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 40px;
+
+}
+
+.navbar-brand{
+    padding: 0px 5px;
+}
+
+.container{
+    padding-left: 0px;
+}
+
+#bloco{
+    padding: 5px 5px 3px 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.form-control{
+    fill: #fff;
+    border: none;
+    background-color: rgb(167, 20, 10);
+    color: black;
+    position: absolute;
+    display: block;
+    right: 10px;
+    width:100%;
+    height: 20px;
+    font: inherit;
+    margin-top: 15px;
+    padding: 5px 5px 3px 20px;
+}
+
+#lupa{
+    width: 26px;
+    height: 16px;
+    fill: white;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+#divBusca{
+    background-color:rgb(167, 20, 10);
+    border-radius:4px;
+    width:165px;
+    height: 35px;
+    float:right;
+    margin-right: 25px;
+    border: none;
+    margin-top: -55px;
+  }
+  
+  #txtBusca{
+    background-color:transparent;
+    font-size:15px;
+    border:none;
+    width:134px;
+    height: 38px;
+    float:right;
+    padding: 10px 0px 13px 0px;
+    font-weight: bold;
+  }
+
+  input::placeholder{
+    font-size: 13px;
+    font-weight:bold;
+    color: white;
+  }
+  
+
+#ass{
+    color: #999;
+    font-size: 12px;
+    padding: 10px 15px 13px 4px;
+    vertical-align: top;
+    height: 15px;
+}
+
+#ass:hover{
+    color: rgb(89, 172, 234);
+}
+
+#botao{
+    padding: 2px 1px;
+    color: #8b8a8a;
+    font-size: 12px;
+    background: #f9f9f9;
+    width: 65px;
+    height: 23px;
+}
+
+#botao:hover{
+    color: rgb(89, 172, 234);
+}
+
+#senha{
+    width: 100px;
+}
+
+#nave{
+    height: 20px;
+    width: 100%;
+}
+
+#imglogo{
+    margin-top: 55px;
+    margin-left: 635px;
+}
+
+#img{
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+#banner{
+    margin-top: 27px;
+    margin-left: 110px;
+    margin-right: 30px;
+    padding: 130px 120px 0px 80px;
+    height: 380px;
+    width: 100%;
+}
+
+#propa2{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px 120px 0px 80px;
+    height: 280px;
+    width: 100%;
+}
+
+#nav2{
+    background: rgb(196, 23, 12);
+    width: 100%;
+    height: 75px;
+}
+
+#menu{
+    padding-top: 3px;
+    padding-left: 3px;
+    width: 50px;
+    height: 75px;
+    display: block;
+    fill: #fff;
+    transition: 0.5s;
+}
+
+.sidebar{
+    position: fixed;
+    transition: right 0.3s ease-in-out;
+}
+
+.dropdown{
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#menu:hover{
+    background: rgb(196, 23, 12);
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    
+    background: rgb(196, 23, 12);
+}
+
+.barra{
+    height: 100%;
+}
+
+.itens{
+    background: rgb(250, 250, 250);
+    width: 200px;
+    height: 100%;
+    display: block;
+    padding: 10px 20px 10px 25px;
+}
+
+.dropdown-menu>li>a{
+    font-size: 18px;
+    color: rgb(121, 118, 118);
+    padding: 0px;
+}
+
+.dropdown-menu{
+    padding: 0px;
+}
+
+#botao{
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 2px 1px;
+}
+
+#azul{
+    color: rgb(24, 113, 214);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+#azul:hover{
+    color: rgb(90, 162, 235);
+}
+
+#bordo{
+    color: rgb(196, 23, 12);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+
+
+#verde{
+    color: rgb(6, 170, 72);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+
+#laranja{
+    color: rgb(255, 103, 0);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+
+#verm{
+    color: rgb(238, 61, 78);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+
+#azul-marinho{
+    color: rgb(30, 76, 154);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 9px 7px 12px;
+    letter-spacing: -0.02em;
+}
+
+
+.ola{
+    
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 35px 0px 20px 100px;
+ }
+ 
+ .ola img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+
+ .ola p{
+    color: #000;
+    -webkit-text-stroke: 1px #FFF;
+    line-height: normal;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    position: absolute;
+    top: 420px;
+    left: 25px;
+    right: 15px;
+    font-size: 40px;
+    color: white;
+    z-index: 11;
+ }
+
+h1{
+    position: absolute;
+    top: 550px;
+    right: 15px;
+    left: 25px;
+    font-size: 18px;
+    color: white;
+    z-index: 11;
+ }
+ 
+ .ola:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+
+ .img-container{
+    margin-top: 35px;
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 572px;
+    height: 100%;
+    overflow: hidden;
+ }
+
+ .img-container p{
+    color: #000;
+    -webkit-text-stroke: 1px #FFF;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    position: absolute;
+    top: 260px;
+    padding-left: 15px;
+    padding-right: 30px;
+    font-size: 30px;
+    color: white;
+    z-index: 11;
+ }
+ 
+ .img-container h1{
+    font-weight: bold;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: white;
+ }
+ 
+ .img-container img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .img-container:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+ .img-container2{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 572px;
+    height: 100%;
+    overflow: hidden;
+ }
+ 
+ .img-container2 img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .img-container2:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+ .img-container2 p{
+    color: #000;
+    -webkit-text-stroke: 1px #FFF;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    position: absolute;
+    top: 260px;
+    padding-left: 15px;
+    padding-right: 30px;
+    font-size: 30px;
+    color: white;
+    z-index: 11;
+ }
+
+
+#predio{
+    width: 100%;
+    height: 300px;
+    padding-right: 83px;
+    margin: 33px 83px 0px 0px;
+    border-radius: 8px;
+}
+
+#maquina{
+    width: 100%;
+    height: 300px;
+    padding-right: 83px;
+    margin: 15px 83px 0px 5px;
+    border-radius: 8px;
+}
+
+#carteira{
+    border-radius: 10px;
+    height: 200px;
+    z-index: 11;
+}
+
+
+#carmem{
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    margin-right: -258px;
+    margin-left: 85px;
+}
+
+#coluna{
+    padding-top: 30px;
+    width: 54%;
+}
+
+#linha{
+    margin-left: 85px;
+    margin-right: 35px;
+    border-bottom: 1px solid rgb(201, 195, 195);
+}
+
+.aoVivo{
+    color: white;
+    border-radius: 5px;
+    background: red;
+    padding: 5px 8px 5px 8px;
+    margin-top: 25px;
+    margin-bottom:10px;
+    width: 78px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.card-title{
+    color: rgb(41, 40, 40);
+    font-size: 1.7rem;
+}
+
+.card-text{
+    margin-top: 10px;
+    color: rgb(196, 23, 12);
+    font-weight: bolder;
+    font-size: 2.4rem;
+    letter-spacing: -0.02em;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+.card-text:hover{
+    color: rgb(166, 19, 10);
+}
+
+.text-body-secondary{
+    padding-top: 10px;
+    color: #5c5b5b;
+    font-size: 12PX;
+}  
+
+#fim{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(219, 215, 215);
+    color: rgb(51, 51, 57);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0px 10px 20px;
+    margin-bottom: 0px;
+}
+
+.list-group-item{
+    padding: 11px 16px 15px 16px;
+    border-bottom: none;
+    border-top: none;
+}
+
+#caixa{
+    margin: 0px 5px 0px 10px;
+    border-top:1px solid rgb(219, 215, 215);;
+}
+
+#conteudo{
+    color: rgb(196, 23, 12);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    height: 100%;
+    width: 240px;
+    padding: 25px 2px 0px 5px;
+    border: none;
+}
+
+#conteudo:hover{
+    color: rgb(166, 19, 10);
+}
+
+#publicidade{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+#lateral{
+    margin-top: 30px;
+    margin-right: 0px;
+    width: 400px;
+    height: 100%;
+    padding-left: 0px;
+}
+
+#mulher{
+    border-radius: 8px;
+    margin-left: 0px;
+    margin-top: 20px;
+    
+}
+
+.col-md-1{
+    padding-left: 10px;
+}
+
+#inicio{
+    border: 1px solid rgb(219, 215, 215);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(196, 23, 12);
+    font-weight: bold;
+    padding: 0px;
+}
+
+.header-navegacao .menu-button .burger,
+  .header-navegacao .menu-button .burger:before,
+  .header-navegacao .menu-button .burger:after {
+    background-color: #fff;
+  }
+
+  #busca-padrao .lupa svg,
+  .header-navegacao .search-icon {
+    fill: #fff;
+  }
+
+  .header-navegacao .logo svg {
+    fill: currentColor;
+  }
+
+  .gui-color-primary-bg-after:after {
+    background-color: #C4170C;
+  }
+
+  .header-navegacao .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-navegacao .header-title {
+    padding: 0 30px;
+  }
