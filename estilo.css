@@ -1,10 +1,12 @@
 body{
     color: rgb(75, 40, 40);
+
+    overflow: auto;
 }
 
 .fundo{
     background-color: #000;
-    opacity: 0.2;
+    opacity: 0.3;
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -13,11 +15,15 @@ body{
     border-radius: 8px;
 }
 
+div::-webkit-scrollbar {
+    display: none;
+  }
+
 .fundoo{
     background-color: #000;
     opacity: 0.2;
     position: absolute;
-    width: 68,9%;
+    width: 44.4%;
     z-index: 10;
     height: 100%;
     top: 0;
@@ -182,11 +188,10 @@ body{
     width: 100%;
 }
 
-#propa2{
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 15px 120px 0px 80px;
-    height: 280px;
+#banner2{
+    margin: -35px 30px 0px 110px;
+    padding: 80px 120px 0px 80px;
+    height: 380px;
     width: 100%;
 }
 
@@ -316,137 +321,226 @@ body{
     letter-spacing: -0.02em;
 }
 
+.col-md-6{
+    margin-top: 30px;
+    padding-left: 10px;
+}
 
 .ola{
-    
-    display: inline-block;
+    background: #fff;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    width: 90.5%;
+    height: 600px;
+    margin-left: 75px;
+    padding: 200px 15px 0px 25px;
+    color: #c4170c;
+    letter-spacing: -0.035em;
     position: relative;
-    width: 600px;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    margin: 35px 0px 20px 100px;
- }
- 
- .ola img{
-    width: 100%;
-    height: 100%;
+}
+
+.ola:hover{
+    color: rgb(166, 19, 10);
+}
+
+.ola2:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
+}
+
+
+
+.ola2 img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.ola2 h2{
+    color: #fff;
+    font-size: 34px;
+    font-weight: bolder;
+    position: relative;
+    margin-top: -194px;
+    padding-bottom: -13px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+h2{
+    text-align: left;
+    font-size: 42px;
+    font-weight: bolder;
+    z-index: 11;
+    letter-spacing: -0.035em;
+ }
+
+.ola h4{
+    margin-top: -176px;
+    margin-bottom: 140px;
+    color: rgb(61, 61, 61);
+    font-size: 17px;
+ }
+
+
+ .ola2 p{
+    color: #fff;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    z-index: 11;
+    font-size: 15px;
  }
 
  .ola p{
-    color: #000;
-    -webkit-text-stroke: 1px #FFF;
-    line-height: normal;
-    letter-spacing: -0.05em;
-    font-weight: bold;
-    position: absolute;
-    top: 420px;
-    left: 25px;
-    right: 15px;
-    font-size: 40px;
-    color: white;
-    z-index: 11;
+    margin-top: 20px;
+    color: rgb(95, 93, 93);
+    font-size: 17px;
  }
 
-h1{
-    position: absolute;
-    top: 550px;
-    right: 15px;
-    left: 25px;
-    font-size: 18px;
-    color: white;
-    z-index: 11;
- }
- 
- .ola:hover img{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
- }
-
-
- .img-container{
-    margin-top: 35px;
-    margin-left: 10px;
+.ola2{
     border-radius: 8px;
-    width: 572px;
-    height: 100%;
     overflow: hidden;
- }
-
- .img-container p{
-    color: #000;
-    -webkit-text-stroke: 1px #FFF;
-    line-height: normal;
-    letter-spacing: -0.02em;
-    position: absolute;
-    top: 260px;
-    padding-left: 15px;
-    padding-right: 30px;
-    font-size: 30px;
-    color: white;
-    z-index: 11;
- }
- 
- .img-container h1{
-    font-weight: bold;
-    line-height: normal;
-    position: absolute;
-    top: 30px;
-    padding-left: 20px;
-    padding-right: 10px;
-    font-size: 15px;
-    color: white;
- }
- 
- .img-container img{
-    width: 100%;
     height: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
- }
- 
- .img-container:hover img{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    width: 89%;
  }
 
- .img-container2{
+ .caixas{
+    margin: -5px 10px 15px 70px;
+    padding-top: 0px;
+ }
+
+ .caixas2 hr{
+    padding: -50px;
     margin-top: 10px;
+    margin-bottom: -15px;
+ }
+
+ .seta{
+    fill: red;
+ }
+
+.col-md-4 a{
+    text-decoration: none;
+    margin-left: -15px;
+    color: #c4170c;
+    font-weight: bold;
+    padding: 16px 24px;
+    align-items: left;
+    display: flex;
+    width: 406px;
+    height: 100%;
+    background: #fff;
+    border-top: 0.5px solid #d1d0d0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+ }
+
+ .col-md-4 img{
+    margin-top: 6px;
     margin-left: 10px;
-    border-radius: 8px;
-    width: 572px;
-    height: 100%;
-    overflow: hidden;
+    width: 3%;
+    height: 3.5%;
  }
- 
- .img-container2 img{
+
+ #dropdownMenuButton:hover{
+    color: rgb(166, 19, 10);
+ }
+
+ .caixas h3{
+    color: #c4170c;
+    font-size: 14px;
+    margin: 10px 0px 0px 380px;
+ }
+
+ .caixas h3:hover{
+    color: rgb(166, 19, 10);
+ }
+
+ .caixas h4{
+   color: rgb(61, 61, 61);
+   font-size: 16px;
+   font-weight: 550;
+   margin: -195px 0px 0px 380px;
+ }
+
+ .caixas h5{
+    font-size: 17px;
+    color: rgb(85, 85, 85);
+    margin: 10px 0px 10px 380px;
+ }
+
+ .caixas h2{
+    margin: 10px 10px 0px 380px;
+    font-size: 25px;
+    color: #c4170c;
+ }
+
+.small{
+    height: 100%;
+    width: 360px;
+    border-radius: 10px;
+}
+
+.caixas span{
+    margin: 10px 0px 0px 380px;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+}
+
+
+.caixas2 img{
+    height: 100%;
+    width: 100px;
+    float: right;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.caixas2{
+    height: 100%;
     width: 100%;
+}
+
+.col-md-4{
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 221, 221);    
+    width: 408px;
     height: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
- }
- 
- .img-container2:hover img{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
- }
+}
 
- .img-container2 p{
-    color: #000;
-    -webkit-text-stroke: 1px #FFF;
-    line-height: normal;
-    letter-spacing: -0.02em;
-    position: absolute;
-    top: 260px;
-    padding-left: 15px;
-    padding-right: 30px;
-    font-size: 30px;
-    color: white;
-    z-index: 11;
- }
+.col-md-4 p{
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    margin: 0px -15px 0px -15px;
+    padding: 15px 0px 15px 20px;
+    border-bottom: 1px solid rgb(224, 221, 221); 
+}
 
+hr {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #e2e0e0;
+}
+.caixas2 h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: #c4170c;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    margin-right: 140px;
+    margin-bottom: 60px;
+}
+
+.caixas2 h5:hover{
+    color: rgb(166, 19, 10);
+}
 
 #predio{
     width: 100%;
@@ -454,6 +548,7 @@ h1{
     padding-right: 83px;
     margin: 33px 83px 0px 0px;
     border-radius: 8px;
+    border-right-width: 10px;
 }
 
 #maquina{
@@ -464,62 +559,9 @@ h1{
     border-radius: 8px;
 }
 
-#carteira{
-    border-radius: 10px;
-    height: 200px;
-    z-index: 11;
-}
-
-
-#carmem{
-    margin-top: 30px;
-    padding-left: 0px;
-    padding-bottom: 30px;
-    margin-right: -258px;
-    margin-left: 85px;
-}
-
-#coluna{
-    padding-top: 30px;
-    width: 54%;
-}
-
-#linha{
-    margin-left: 85px;
-    margin-right: 35px;
-    border-bottom: 1px solid rgb(201, 195, 195);
-}
-
-.aoVivo{
-    color: white;
-    border-radius: 5px;
-    background: red;
-    padding: 5px 8px 5px 8px;
-    margin-top: 25px;
-    margin-bottom:10px;
-    width: 78px;
-    height: 20px;
-    font-size: 10px;
-    font-weight: bold;
-}
-
 .card-title{
     color: rgb(41, 40, 40);
     font-size: 1.7rem;
-}
-
-.card-text{
-    margin-top: 10px;
-    color: rgb(196, 23, 12);
-    font-weight: bolder;
-    font-size: 2.4rem;
-    letter-spacing: -0.02em;
-    line-height: 25px;
-    margin-bottom: 5px;
-}
-
-.card-text:hover{
-    color: rgb(166, 19, 10);
 }
 
 .text-body-secondary{
@@ -548,21 +590,6 @@ h1{
 #caixa{
     margin: 0px 5px 0px 10px;
     border-top:1px solid rgb(219, 215, 215);;
-}
-
-#conteudo{
-    color: rgb(196, 23, 12);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    height: 100%;
-    width: 240px;
-    padding: 25px 2px 0px 5px;
-    border: none;
-}
-
-#conteudo:hover{
-    color: rgb(166, 19, 10);
 }
 
 #publicidade{
