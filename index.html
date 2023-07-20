@@ -10,7 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="./src/estilo.css" rel="stylesheet">
     <link rel="icon" href="./img/log-g1.png">
     <link href="./scripts/script.js">
 
@@ -32,62 +32,72 @@
                     <li class="divisor" role="separator"></li>
                     <li><a target="_top" id="bordo" href="https://g1.globo.com/?utm_source=barraGCOM">g1</a></li>
                     <li class="divisor" role="separator"></li>
-                    <li><a id="verde" href="https://ge.globo.com/?utm_source=barraGCOM">ge</a></li>
+                    <li><a target="_top" id="verde" href="https://ge.globo.com/?utm_source=barraGCOM">ge</a></li>
                     <li class="divisor" role="separator"></li>
                     <li><a id="laranja" href="https://gshow.globo.com/?utm_source=barraGCOM">gshow</a></li>
                     <li class="divisor" role="separator"></li>
                     <li><a id="verm" href="https://globoplay.globo.com/?utm_source=barraGCOM">globoplay</a></li>
+                    <li class="divisor" role="separator"></li>
                     <li><a id="azul-marinho" href="https://globoplay.globo.com/?utm_source=barraGCOM">o globo</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="ass" href="#">ASSINE JÁ</a></li>
+                    <li><a id="ass" href="https://vitrine.globo.com/">ASSINE JÁ</a></li>
                     <button id="botao" class="btn btn-default">ENTRAR > </button>
                 </ul>
             </div>
-
-
-
             <section id="nav2">
-
                 <div class="row">
                     <div class="d-flex justify-content-between">
-                        <div class="col-md-4/3">
-                            <li class="dropdown">
-
-                                <a id="menu" href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="img"
-                                        src="./img/menu.png"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="itens"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            editoriais <span class="caret"></span></a>
-                                    <li class="itens"><a href="#">guias de compra</a></li>
-                                    <li class="itens"><a href="#">regiões</a></li>
-                                    <li class="itens"><a href="#">telejornais</a></li>
-                                    <li class="itens"><a href="#">globonews</a></li>
-                                    <li class="itens"><a href="#">blogs e colunas</a></li>
-                                    <li class="itens"><a href="#">podcasts</a></li>
-                                    <li class="itens"><a href="#">serviços</a></li>
-                                    <li class="itens"><a href="#">vídeos</a></li>
-                                    <li class="itens"><a href="#">newsletter</a></li>
-                                    <li class="itens"><a href="#">webstories</a></li>
-                                    <li class="itens"><a href="#">especial publicitário</a></li>
-                                </ul>
-                            </li>
+                        <div class="col-md-2 caixa">
+                            <div class="dropdown">
+                                <button onclick="abrirMenu()" class="dropbtn">
+                                    <div class="first"></div>
+                                    <div class="divv"></div>
+                                    <div class="divv"></div>
+                                    <p class="menu">MENU</p>
+                                </button>
+                                <div id="openMenu" class="dropdown-content">
+                                    <a href="#">editoriais</a>
+                                    <a href="#">guias de compra</a>
+                                    <a href="#">regiões</a>
+                                    <a href="#">telejornais</a>
+                                    <a href="#">globonews</a>
+                                    <a href="#">blogs e colunas</a>
+                                    <a href="#">podcasts</a>
+                                    <a href="#">serviços</a>
+                                    <a href="#">vídeos</a>
+                                    <a href="#">webstories</a>
+                                    <a href="#">especial publicitário</a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#">princípios editoriais</a>
+                                    <a href="#">sobre o g1</a>
+                                    <a href="#">app g1</a>
+                                    <a href="#">equipe</a>
+                                    <a href="#">entre em contato</a>
+                                    <a href="#">termos do g1</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-md-4/3">
-                            <a class="navbar-brand navbar-fixed-top" href="https://www.globo.com/?utm_source=barraGCOM">
-                                <img id="imglogo" src="./img/logo.png" class="img-responsive">
-                            </a>
+                        <div class="col-md-2">
+
+                            <img id="imglogo" src="./img/logo.png" class="img-responsive">
+
                         </div>
 
-                        <div class="col-md-4/3" id="divBusca">
-                            <input type="text" id="txtBusca" placeholder="BUSCAR" />
-                            <svg id="lupa" xmlns="http://www.w3.org/2000/svg" class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        <div class="col-md-8" id="divBusca">
+                            <input type="text" id="txtBusca" placeholder="BUSCAR" class="alteraCaixa"
+                                onfocus="expandInput()" onblur="resetInput()" onkeyup="updateFilter()">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 50 50" id="lupa">
+                                <circle fill="none" stroke="#FFFF" stroke-width="5" stroke-linecap="round"
+                                    stroke-miterlimit="10" cx="21" cy="20" r="16" />
+                                <line fill="none" stroke="#FFFF" stroke-width="6" stroke-miterlimit="10" x1="32.229"
+                                    y1="32.229" x2="45.5" y2="45.5" />
                             </svg>
+
                         </div>
                     </div>
                 </div>
@@ -112,7 +122,8 @@
     </section>
 
     <div id="banner2">
-        <a href="https://nubank.com.br/?utm_source=direct-buy&utm_medium=cpm&utm_campaign=direct-buy_display_Globo_G1_reach_impressions_cpm_fixed-cost_multi&utm_term=fixed-cost_reach_impressions_cpm_3rd_AS18+_Globo_G1_multi_display_billboard_970x250_portfolio_portfolio-awareness_site-home_diaria-12-06&utm_placement=G1&utm_content=portfolio">
+        <a
+            href="https://nubank.com.br/?utm_source=direct-buy&utm_medium=cpm&utm_campaign=direct-buy_display_Globo_G1_reach_impressions_cpm_fixed-cost_multi&utm_term=fixed-cost_reach_impressions_cpm_3rd_AS18+_Globo_G1_multi_display_billboard_970x250_portfolio_portfolio-awareness_site-home_diaria-12-06&utm_placement=G1&utm_content=portfolio">
             <img src="./img/propaganda.png" class="img-responsive">
         </a>
     </div>
@@ -124,14 +135,15 @@
                 <div class="col-md-4">
                     <p>Viu isso aqui?</p>
                     <div class="right"></div>
-                    <a>Mais conteúdos recomendados<img class="seta" src="./img/drop.png" alt="expand-arrow--v1"/></a>               
+                    <a>Mais conteúdos recomendados<img class="seta" src="./img/drop.png" alt="expand-arrow--v1" /></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="banner">
-        <a href="https://nubank.com.br/?utm_source=direct-buy&utm_medium=cpm&utm_campaign=direct-buy_display_Globo_G1_reach_impressions_cpm_fixed-cost_multi&utm_term=fixed-cost_reach_impressions_cpm_3rd_AS18+_Globo_G1_multi_display_billboard_970x250_portfolio_portfolio-awareness_site-home_diaria-12-06&utm_placement=G1&utm_content=portfolio">
+    <div id="banner3">
+        <a
+            href="https://nubank.com.br/?utm_source=direct-buy&utm_medium=cpm&utm_campaign=direct-buy_display_Globo_G1_reach_impressions_cpm_fixed-cost_multi&utm_term=fixed-cost_reach_impressions_cpm_3rd_AS18+_Globo_G1_multi_display_billboard_970x250_portfolio_portfolio-awareness_site-home_diaria-12-06&utm_placement=G1&utm_content=portfolio">
             <img src="./img/propaganda3.png" class="img-responsive">
         </a>
     </div>
@@ -140,10 +152,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <script src="scripts/notice.js"></script>
     <script src="scripts/script.js"></script>
 
-    
+
 </body>
 
 </html>

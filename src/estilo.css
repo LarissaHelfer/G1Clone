@@ -1,7 +1,6 @@
 body{
     color: rgb(75, 40, 40);
-
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 .fundo{
@@ -30,6 +29,57 @@ div::-webkit-scrollbar {
     border-radius: 10px;
 }
 
+#divBusca{
+    width: 165px;
+    height:35px;
+    float:right;
+    background: #a6130a;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0px;
+    margin-right: 25px;
+    transition: width 0.3s ease;
+}
+
+#divBusca.alteraCaixa{
+    background-color: #00FFFF;
+    border-radius:5px;
+    width:250px;
+    height:35px;
+    float:right;
+    margin-right: 25px;
+    padding: 0px 0px 0px 8px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    transition: width 0.3s ease;
+    opacity: 1;
+    color: #5c5b5b;
+  }
+  
+  #txtBusca{
+    background-color:transparent;
+    font-size:15px;
+    border:none;
+    height:22px;
+    width:108px;
+    padding: 10px 0 10px 0;
+    outline: none;
+    margin-top: 7px;
+  }
+
+  
+#lupa{
+    padding-top: 10px;
+    float: left;
+    height: 28px;
+    width: 28px;
+    fill: #FFFF;
+}
+
+.colunas{
+    justify-content: space-around;
+}
+
 .overlay{
     position: relative;
 }
@@ -48,29 +98,8 @@ div::-webkit-scrollbar {
     height: 100px;
 }
 
-.navbar-collapse{
-    padding-left: 0px;
-    padding-bottom: 0px;
-}
-
-.nav>li>a{
-    padding: 10px 5px 10px 10px;
-}
-
-.dropdown-menu{
-    background: rgb(250, 250, 250);
-    color: #666;
-    height: 100%;
-    width: 50px;
-    position: relative;
-    box-sizing: border-box;
-    padding: 0 20px;
-    height: 40px;
-
-}
-
 .navbar-brand{
-    padding: 0px 5px;
+    padding: 0px 2px 10px 2px;
 }
 
 .container{
@@ -98,35 +127,6 @@ div::-webkit-scrollbar {
     padding: 5px 5px 3px 20px;
 }
 
-#lupa{
-    width: 26px;
-    height: 16px;
-    fill: white;
-    margin-top: 10px;
-    margin-left: 2px;
-}
-
-#divBusca{
-    background-color:rgb(167, 20, 10);
-    border-radius:4px;
-    width:165px;
-    height: 35px;
-    float:right;
-    margin-right: 25px;
-    border: none;
-    margin-top: -55px;
-  }
-  
-  #txtBusca{
-    background-color:transparent;
-    font-size:15px;
-    border:none;
-    width:134px;
-    height: 38px;
-    float:right;
-    padding: 10px 0px 13px 0px;
-    font-weight: bold;
-  }
 
   input::placeholder{
     font-size: 13px;
@@ -170,8 +170,9 @@ div::-webkit-scrollbar {
 }
 
 #imglogo{
-    margin-top: 55px;
-    margin-left: 635px;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 410px;
 }
 
 #img{
@@ -180,17 +181,28 @@ div::-webkit-scrollbar {
 }
 
 #banner{
-    margin-top: 27px;
-    margin-left: 110px;
-    margin-right: 30px;
-    padding: 130px 120px 0px 80px;
+    display: flex;
+    justify-content: center;
+    height: 380px;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: -100px;
+    padding-bottom: 180px;
+}
+
+#banner2{
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding-bottom: 180px;
+    display: flex;
+    justify-content: center;
     height: 380px;
     width: 100%;
 }
 
-#banner2{
-    margin: -35px 30px 0px 110px;
-    padding: 80px 120px 0px 80px;
+#banner3{
+    display: flex;
+    justify-content: center;
     height: 380px;
     width: 100%;
 }
@@ -201,55 +213,6 @@ div::-webkit-scrollbar {
     height: 75px;
 }
 
-#menu{
-    padding-top: 3px;
-    padding-left: 3px;
-    width: 50px;
-    height: 75px;
-    display: block;
-    fill: #fff;
-    transition: 0.5s;
-}
-
-.sidebar{
-    position: fixed;
-    transition: right 0.3s ease-in-out;
-}
-
-.dropdown{
-    transition: margin-left 0.3s ease-in-out;
-}
-
-#menu:hover{
-    background: rgb(196, 23, 12);
-}
-
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
-    
-    background: rgb(196, 23, 12);
-}
-
-.barra{
-    height: 100%;
-}
-
-.itens{
-    background: rgb(250, 250, 250);
-    width: 200px;
-    height: 100%;
-    display: block;
-    padding: 10px 20px 10px 25px;
-}
-
-.dropdown-menu>li>a{
-    font-size: 18px;
-    color: rgb(121, 118, 118);
-    padding: 0px;
-}
-
-.dropdown-menu{
-    padding: 0px;
-}
 
 #botao{
     margin-top: 10px;
@@ -260,7 +223,7 @@ div::-webkit-scrollbar {
 #azul{
     color: rgb(24, 113, 214);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 3px;
     margin-right: 1px;
     padding: 9px 7px 12px;
@@ -273,52 +236,80 @@ div::-webkit-scrollbar {
 #bordo{
     color: rgb(196, 23, 12);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 9px 7px 12px;
+    padding: 9px 7px 0px;
     letter-spacing: -0.02em;
 }
 
+#bordo:hover{
+    padding: 7px 7px 0px;
+    border-top: 2px solid rgb(196, 23, 12);
+}
 
 #verde{
     color: rgb(6, 170, 72);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 9px 7px 12px;
+    padding: 9px 7px 0px;
     letter-spacing: -0.02em;
+}
+
+#verde:hover{
+    border-top: 2px solid rgb(6, 170, 72);
+    padding: 7px 7px 0px;
 }
 
 #laranja{
     color: rgb(255, 103, 0);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 9px 7px 12px;
+    padding: 9px 7px 0px;
     letter-spacing: -0.02em;
+}
+
+#laranja:hover{
+    padding: 7px 7px 0px;
+    border-top: 2px solid rgb(255, 103, 0);
 }
 
 #verm{
     color: rgb(238, 61, 78);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 9px 7px 12px;
+    padding: 9px 7px 0px;
     letter-spacing: -0.02em;
+}
+
+#verm:hover{
+    padding: 7px 7px 0px;
+    border-top: 2px solid rgb(238, 61, 78);
 }
 
 #azul-marinho{
     color: rgb(30, 76, 154);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 1px;
     margin-right: 1px;
-    padding: 9px 7px 12px;
+    padding: 9px 7px 0px;
     letter-spacing: -0.02em;
+}
+
+#azul-marinho:hover{
+    padding: 7px 7px 0px;
+    border-top: 2px solid rgb(30, 76, 154);
+}
+
+.nav .navbar-nav .navbar-left{
+    padding: 0px;
 }
 
 .col-md-6{
@@ -349,7 +340,6 @@ div::-webkit-scrollbar {
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 }
-
 
 
 .ola2 img{
@@ -444,10 +434,6 @@ h2{
     margin-left: 10px;
     width: 3%;
     height: 3.5%;
- }
-
- #dropdownMenuButton:hover{
-    color: rgb(166, 19, 10);
  }
 
  .caixas h3{
@@ -587,10 +573,6 @@ hr {
     border-top: none;
 }
 
-#caixa{
-    margin: 0px 5px 0px 10px;
-    border-top:1px solid rgb(219, 215, 215);;
-}
 
 #publicidade{
     width: 100%;
@@ -626,24 +608,6 @@ hr {
     padding: 0px;
 }
 
-.header-navegacao .menu-button .burger,
-  .header-navegacao .menu-button .burger:before,
-  .header-navegacao .menu-button .burger:after {
-    background-color: #fff;
-  }
-
-  #busca-padrao .lupa svg,
-  .header-navegacao .search-icon {
-    fill: #fff;
-  }
-
-  .header-navegacao .logo svg {
-    fill: currentColor;
-  }
-
-  .gui-color-primary-bg-after:after {
-    background-color: #C4170C;
-  }
 
   .header-navegacao .logo {
     width: 30px;
@@ -653,3 +617,72 @@ hr {
   .header-navegacao .header-title {
     padding: 0 30px;
   }
+
+  .dropbtn {
+    background: #C4170C;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 83px;
+    font-weight: bold;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 250px;
+    margin-top: -100px;
+    transition: 0.5s;
+    overflow-y: scroll;
+    height: 650px;
+  }
+
+  .dropdown-content a {
+    color: rgb(141, 138, 138);
+    padding: 10px 10px 5px 22px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    overflow-y: auto;
+  }
+
+  .dropdown-content a:first-child{
+    margin-top: 20px;
+  }
+  
+.show {
+    display: block;
+}
+  
+.menu{
+    display: flex;
+    justify-content: right;
+    color: #ffff;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: -18px;
+    
+}
+
+.divv {
+    width: 20px;
+    height: 2px;
+    background-color: #FFFF;
+    margin: 0px 5px 4px 05px;
+    text-decoration: none;
+}
+
+.first{
+    width: 20px;
+    height: 2px;
+    background-color: #FFFF;
+    margin-left: 5px;
+    margin-bottom: 3.5px;
+    margin-top: 30px;
+    text-decoration: none;
+}
