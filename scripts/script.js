@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       itemTopLeft += `<img src="${n.image}" class="img-responsive small">`;
     }
     itemTopLeft += `
-                            </div><h4>${n.label}</h4><h2>${n.title}</h2><h3>${n.underTille}</h3><h5>${n.subtitle}</h5><span>${n.time}</span><hr></hr></div>`;
+                    </div><h4>${n.label}</h4><h2>${n.title}</h2><h3>${n.underTille}</h3><h5>${n.subtitle}</h5><span>${n.time}</span><hr></hr></div>`;
     return itemTopLeft;
   });
   elementSecond.querySelector(".box .left").innerHTML = resultTop;
